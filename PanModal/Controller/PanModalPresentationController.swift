@@ -188,10 +188,6 @@ open class PanModalPresentationController: UIPresentationController {
 
         guard let containerView = containerView
             else { return }
-
-      if self.panContainerView.frame == .zero {
-        self.adjustPresentedViewFrame()
-      }
       
         layoutBackgroundView(in: containerView)
         layoutPresentedView(in: containerView)
